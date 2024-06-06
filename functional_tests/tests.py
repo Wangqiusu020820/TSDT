@@ -12,7 +12,8 @@ class NewVisitorTest(StaticLiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Chrome(executable_path="C:/Program Files/Google/Chrome/Application/chromedriver")
-        real_server = os.environ.get('REAL_SERVER')
+        # real_server = os.environ.get('REAL_SERVER')
+        real_server = '8.130.133.69'
         if real_server:
             self.live_server_url = 'http://' + real_server
         # self.browser.implicitly_wait(3)
